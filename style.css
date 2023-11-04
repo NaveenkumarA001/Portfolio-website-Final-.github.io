@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto" sans-serif;
+  background-color: #232d3f;
+}
+
+header {
+  height: 70dvw;
+  height: 300px;
+  padding: 30px 50%;
+  background-image: url();
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: -15px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 40%;
+  z-index: 100; /*this is the z-index used for overlapping element*/
+}
+
+header nav img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  filter: invert(50px) sepia(100%) saturate(558%) hue-rotate(359deg)
+    brightness(200%) contrast(106%);
+  border-radius: 50px;
+  margin-left: -750px;
+}
+
+header nav ul {
+  display: flex;
+  margin-left: 10%;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: -15px 20px;
+  border: none;
+  outline: none;
+}
+
+header nav ul li a {
+  color: #b6fffa;
+  text-decoration: none;
+  transition: all ease 0.05s;
+  transform-box: border-box;
+  transform-style: preserve-3d;
+  font-size: 20px;
+}
+
+header nav ul li a:hover {
+  color: #f4ce14;
+}
+
+header nav .srch {
+  height: 30px;
+  width: 150px;
+  background-color: #3d3e42;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4px;
+  border-radius: 10px;
+  margin-top: -10px;
+  margin-right: -110px;
+}
+
+header nav .srch input {
+  border: none;
+  background-color: transparent;
+  width: 60%;
+  color: #fbfbfb;
+  outline: none;
+  font-weight: lighter;
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+header nav .srch input:focus {
+  border: none;
+  outline: none;
+}
+
+header nav .srch input::placeholder {
+  color: #fbfbfb;
+  font-size: 20px;
+}
+
+header nav .srch i {
+  color: #fbfbfb;
+}
+
+.intro {
+  font-weight: lighter;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.intro button {
+  height: 40px;
+  width: 140px;
+  margin-top: 20px;
+  margin-right: 8%;
+  background-color: transparent;
+  color: #fec86a;
+  border: 2px solid #fec86a;
+  font-size: 16px;
+  transition: all ease 0.5s;
+  border-radius: 8px;
+}
+
+.intro a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: #fbfbfb;
+}
+
+.intro button:hover {
+  background-color: #fec86a;
+  color: #3d3e42;
+}
+
+.about {
+  width: 70%;
+  height: 70%;
+  padding: 100px;
+}
+
+.about h2 {
+  font-size: 35px;
+  font-weight: lighter;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.about .line {
+  height: 2px;
+  width: 50px;
+  background-color: #fec86a;
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+.about p {
+  font-size: 20px;
+  padding-left: 65px;
+  color: #fbfbfb;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  padding: 50px 100px;
+}
+
+.skills h2 {
+  font-size: 35px;
+  font-weight: lighter;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.skills .line {
+  height: 2px;
+  width: 70px;
+  background-color: #fec86a;
+  margin-right: 8%;
+  border-radius: 10px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.skill-card {
+  height: 150px;
+  width: 150px;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 20px;
+  transition: all ease 0.5s;
+}
+.skill-card:hover {
+  background-color: #fec86a;
+}
+
+.skill-card img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  border-radius: 90px;
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #fbfbfb;
+}
+
+.contacts {
+  width: 70%;
+  height: 70%;
+  padding: 50px 100px;
+}
+
+.contacts h2 {
+  font-size: 35px;
+  font-weight: lighter;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.contacts .line {
+  height: 2px;
+  width: 40px;
+  background-color: #fec86a;
+  border-radius: 20px;
+}
+
+.contacts p {
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-bottom: 8px;
+  color: aqua;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.contacts .email label {
+  width: 10%;
+  height: 10%;
+  margin-left: 100px;
+  color: #fbfbfb;
+  font-size: 20px;
+}
+
+.contacts .email input {
+  border: none;
+  outline: none;
+  width: 35%;
+  margin-left: 50px;
+  color: #fbfbfb;
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 1px 40px;
+  background-color: #3d3e42;
+  font-family: "Libre Baskerville", serif;
+}
+
+.contacts .contact_details label {
+  width: 10%;
+  height: 10%;
+  margin-left: 100px;
+  color: #fbfbfb;
+  font-size: 20px;
+}
+.contacts .contact_details select {
+  border: none;
+  outline: none;
+  margin-left: 40px;
+  color: #fbfbfb;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 1px 10px;
+  background-color: #3d3e42;
+  font-family: "Libre Baskerville", serif;
+}
+.contacts .contact_details input {
+  border: none;
+  outline: none;
+  width: 26%;
+  margin-left: 15px;
+  color: #fbfbfb;
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 1px 50px;
+  background-color: #3d3e42;
+  font-family: "Libre Baskerville", serif;
+}
+
+.contacts .cont_sub {
+  height: 30px;
+  width: 80px;
+  margin-top: 20px;
+  margin-left: 100px;
+  background-color: transparent;
+  color: black;
+  border: 2px solid #186f65;
+  transition: all ease 0.5s;
+  border-radius: 8px;
+  padding: 3px 6px;
+}
+
+.contacts .cont_sub button {
+  font-size: 18px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+.contacts .cont_sub:hover {
+  background-color: #186f65;
+  color: #3d3e42;
+}
